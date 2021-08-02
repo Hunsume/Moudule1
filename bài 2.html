@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>searchIndex</title>
+</head>
+<body>
+<script>
+    let arrNumber = [8, 5, 6, 9, 2, 1, 7, 15];
+
+    function searchIndex(number, arrNumber) {
+        for (let i = 0; i < arrNumber.length; i++) {
+            if (arrNumber[i] === number) {
+                return index = i;
+            }
+        }
+    }
+
+    let number = +prompt("Nhập phần tử bạn muốn tìm: ");
+    let result = searchIndex(number, arrNumber);
+    if (result !== -1) {
+        document.write("Phần tử bạn tìm là: " + number + " Nằm ở vị trí: " + result);
+    } else {
+        document.write(" Không có kết quả!!! ");
+    }
+</script>
+
+</body>
+</html>

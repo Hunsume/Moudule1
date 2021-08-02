@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>countChar</title>
+</head>
+<body>
+<script>
+    function countChar(arrStr) {
+        let count = 0;
+        for(let i = 0; i < arrStr.length; i++){
+            if(arrStr[i] === "a" ||
+                arrStr[i] === "o" ||
+                arrStr[i] === "e" ||
+                arrStr[i] === "u" ||
+                arrStr[i] === "i") {
+                count++;
+            }
+        }
+        if(count !== 0){
+            return " Có " + count + " ký tự nguyên âm ";
+        }
+        return false;
+    }
+
+    let arrStr = prompt(" Nhập vào chuỗi ký tự bất kỳ: ");
+    let result = countChar(arrStr);
+    document.write(result);
+
+</script>
+</body>
+</html>
